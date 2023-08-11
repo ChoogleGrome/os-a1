@@ -28,12 +28,10 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    for (int i = 1; n > 0; i++) {
-        if (i % 2 == 0) {
-            sleep(5);
-            printf("%d\n", i);
-            n--;
-        }
+    for (int i = 0; n > 0; i += 2) {
+        printf("%d\n", i);
+        sleep(5);
+        n--;
     }
 
     return 0;
